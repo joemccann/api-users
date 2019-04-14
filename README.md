@@ -45,7 +45,7 @@ curl https://${DEFAULT_REGION}-${PROJECT}.cloudfunctions.net/api-users?id=foo
 curl https://${DEFAULT_REGION}-${PROJECT}.cloudfunctions.net/api-users --data '{"username": "foo", "email":"update-test@gmail.com"}' -H "Content-Type: application/json"
 
 # Delete a user by their username
-curl -X DELETE https://${DEFAULT_REGION}-${PROJECT}.cloudfunctions.net/api-users --data '{"username": "foo"}' -H "Content-Type: application/json"
+curl -X DELETE https://${DEFAULT_REGION}-${PROJECT}.cloudfunctions.net/api-users?username=foo
 ```
 
 ## DEPLOY

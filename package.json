@@ -1,0 +1,29 @@
+{
+  "name": "api-users",
+  "version": "1.0.0",
+  "description": "👷🏽‍♀️ CRUD operations for Google Cloud Functions APIs for a users Collection in Firestore.",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "standard",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joemccann/api-users.git"
+  },
+  "keywords": [],
+  "author": "Joe McCann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joemccann/api-users/issues"
+  },
+  "homepage": "https://github.com/joemccann/api-users#readme",
+  "dependencies": {
+    "@google-cloud/firestore": "1.2.0",
+    "sanitizer": "github:joemccann/sanitizer"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "tape": "^4.10.1"
+  }
+}

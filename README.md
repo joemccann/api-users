@@ -56,7 +56,7 @@ First, fork or clone this repo, then:
 npm i
 ```
 
-You need to pass in your environment variables either in a `.env.yaml` file or as command line arguements.  Run the following command in the root of this repository, assuming a `.env.yaml` file:
+You need to pass in your [environment variables either in a `.env.yaml` file or as command line arguements](https://cloud.google.com/functions/docs/env-var).  Run the following command in the root of this repository, assuming a `.env.yaml` file:
 
 ```sh
 gcloud functions deploy api-users --runtime nodejs10 --trigger-http --memory 128MB --env-vars-file .env.yaml

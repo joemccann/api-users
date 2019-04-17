@@ -1,3 +1,4 @@
+const cors = require('cors-for-cloud-functions')
 const Firestore = require('@google-cloud/firestore')
 const { isEmail } = require('sanitizer')
 
@@ -6,7 +7,11 @@ const COLLECTION = process.env.COLLECTION
 
 const db = new Firestore({ projectId: PROJECTID })
 
-exports['api-users'] = async (req, res) => {
+exports['api-users'] = async (request, response) => {
+  const { req, res, isOptions } = cors(request, response)
+
+  if (isOptions) return res.status(204).send('')
+
   const {
     body,
     query

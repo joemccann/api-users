@@ -20,6 +20,7 @@
   "homepage": "https://github.com/joemccann/api-users#readme",
   "dependencies": {
     "@google-cloud/firestore": "1.2.0",
+    "cors-for-cloud-functions": "github:joemccann/cors-for-cloud-functions",
     "sanitizer": "github:joemccann/sanitizer"
   },
   "devDependencies": {
